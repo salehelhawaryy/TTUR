@@ -15,9 +15,9 @@ samples respectivly.
 
 See --help to see further details.
 '''
+from __future__ import absolute_import, division, print_function
 import tensorflow.compat.v1 as tf
 tf.disable_v2_behavior()
-from __future__ import absolute_import, division, print_function
 import numpy as np
 import os
 import gzip, pickle
