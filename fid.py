@@ -291,6 +291,7 @@ def _handle_path(path, sess, low_profile=False):
         f.close()
     else:
         path = pathlib.Path(path)
+        print(f'PATH BITCHES {path}')
         files = list(path.glob('*.jpg')) + list(path.glob('*.png'))
         print(f'FILES BITCHES {files}')
         if low_profile:
