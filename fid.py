@@ -292,6 +292,7 @@ def _handle_path(path, sess, low_profile=False):
     else:
         path = pathlib.Path(path)
         files = list(path.glob('*.jpg')) + list(path.glob('*.png'))
+        print(f'FILES BITCHES {files}')
         if low_profile:
             m, s = calculate_activation_statistics_from_files(files, sess)
         else:
