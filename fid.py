@@ -61,6 +61,9 @@ def _get_inception_layer(sess):
                 else:
                   new_shape.append(s)
               o.__dict__['_shape_val'] = tf.TensorShape(new_shape)
+    print('==========================')
+    print(pool3)
+    print('==========================')
     return pool3
 #-------------------------------------------------------------------------------
 
